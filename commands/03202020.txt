@@ -1,0 +1,40 @@
+## Step1 :created develop branch
+git checkout -b develop
+
+this is a shortcut for 
+git branch develop
+git checkout develop
+
+## Step 2: Created a fie in the develop branch, added it and then committed it
+
+## Step 3: i switch the branch to master and did a merge with master and later commit and push
+
+$ git merge develop
+Updating 0480fd5..c735620
+Fast-forward
+ developBranchFile1.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 developBranchFile1.txt
+
+
+while i was pushing the changes i made, i got a message stating that 
+
+$ git push
+fatal: The current branch develop has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin develop
+
+pretty new to me so i just did what it recommended
+
+$ git push --set-upstream origin develop
+Total 0 (delta 0), reused 0 (delta 0)
+remote:
+remote: Create a pull request for 'develop' on GitHub by visiting:
+remote:      https://github.com/sreejith49/CITestRepo/pull/new/develop
+remote:
+To https://github.com/sreejith49/CITestRepo.git
+ * [new branch]      develop -> develop
+Branch 'develop' set up to track remote branch 'develop' from 'origin'.
+
+
